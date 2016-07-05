@@ -1,13 +1,13 @@
 
 require 'spec_helper'
 
-feature "Name", :js => true do 
+feature "Demo Fasttrack", :js => true do 
   
-  given (:text) { 'Hello this is working' }
+  given (:hi) { 'Hi Folks! This is working' }
 
-  scenario "just testing" do
+  scenario "Scenario FT" do
     visit('/')
-    fill_in('lst-ib', :with => text)
+    fill_in('lst-ib', :with => hi)
     sleep(15)
   end
 end
