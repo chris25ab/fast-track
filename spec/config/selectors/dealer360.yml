@@ -1,0 +1,6 @@
+d360:
+  user_txt: "user_email"
+  password_txt: "user_password"
+  login_btn: "Log In"
+  user: ""
+  password: ""

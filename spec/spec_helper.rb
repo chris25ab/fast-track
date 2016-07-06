@@ -13,14 +13,14 @@ Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
 
-Capybara.register_driver :selenium_firefox do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :firefox)
-end
+# Capybara.register_driver :selenium_firefox do |app|
+#   Capybara::Selenium::Driver.new(app, :browser => :firefox)
+# end
 
 Capybara.default_driver = :selenium
 Capybara.javascript_driver = :selenium
 Capybara.run_server = false
-Capybara.app_host = 'http://www.google.com/'
+Capybara.app_host = 'https://dealer360.stage.nnanet.com/login'
 Capybara.default_max_wait_time = 60
 
 RSpec.configure do |config|
